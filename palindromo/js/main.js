@@ -1,39 +1,31 @@
-console.log(japonizar("Brad Pitt"));
-console.log(japonizar("NOMBRE"));
-console.log(japonizar("Pedro Gutierrez"));
-console.log(japonizar("Joe McEnroe Jr"));
-console.log(japonizar("Edgar Ramirez III"));
-console.log(japonizar("Angelina Jolie IV"));
+console.log(esPalindromo("A caso hubo buhos aca"));
+console.log(esPalindromo("Querido muerto esta tarde llegamos"));
+console.log("XXX");
 
-function japonizar(text){
+function esPalindromo(text){
+	text = formatText(text);
+
+	let stringInvertido = revertedText(text);
+
+	return text == stringInvertido ? true : false;
+}
+
+function revertedText(text){
+	let stringReverted = "";
+
+	for(let i = text.length-1; i >= 0; i--){
+		stringReverted += text[i];
+	}
+	return stringReverted;
+}
+
+function formatText(text){
 	let newString = "";
+	text = text.toLowerCase();
 
 	for(let i = 0; i < text.length; i++){
-		if(!isVocal(text.charAt(i)) && !isVocal(text.charAt(i+1)) && text[i] != " "){
-			newString += text[i];
-			newString += "u";
-			continue;
-		}
-		newString += text[i];
+		if(text[i] != " ") newString += text[i];
 	}
 
 	return newString;
-}
-
-function isVocal(char){
-	char = char.toLowerCase();
-	switch(char){
-		case 'a':
-			return true;
-		case 'e':
-			return true;
-		case 'i':
-			return true;
-		case 'o':
-			return true;
-		case 'u':
-			return true;
-		default:
-			return false;
-	}
 }
