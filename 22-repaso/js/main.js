@@ -1,14 +1,14 @@
 console.log(getHashTags("How the Avocado Became the Fruit of the Global Trade"));
-// Output: ["#avocado", "#became", "#global"]
+//output: ["#avocado", "#became", "#global"]
 
 console.log(getHashTags("Why You Will Probably Pay More for Your Christmas Tree This Year"));
-// Output: ["#christmas", "#probably", "#will"]
+//output: ["#christmas", "#probably", "#will"]
 
 console.log(getHashTags("Hey Parents, Surprise, Fruit Juice Is Not Fruit"));
-// Output: ["#surprise", "#parents", "#fruit"]
+//output: ["#surprise", "#parents", "#fruit"]
 
 console.log(getHashTags("Visualizing Science"));
-// Output: ["#visualizing", "#science"]
+//output: ["#visualizing", "#science"]
 
 
 function getHashTags(titular) {
