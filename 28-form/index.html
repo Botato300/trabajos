@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TP</title>
+	</head>
+	<body>
+		<h1>Actividad 28: Formularios</h1>
+
+		<h2>Ejercicio 24</h2>
+		<form id="f24">
+			<input type="button" value="1">
+			<input type="button" value="2">
+			<input type="button" value="3">
+		</form>
+
+		<br><hr><br>
+
+		<h2>Ejercicio 25</h2>
+
+		<h3>1.</h3>
+		<form>
+			<input type="text" placeholder="Ingrese un numero" value="0" id="numero">
+			<input type="submit" id="btnSubmit1" value="calcular numero elevado a 2">
+		</form>
+
+		<h3>2.</h3>
+		<form>
+			<input type="text" placeholder="Ingrese un numero" value="0" id="n1">
+			<input type="text" placeholder="Ingrese un numero" value="0" id="n2">
+			<input type="submit" id="btnSubmit2" value="obtener mayor">
+		</form>
+
+		<h3>3.</h3>
+		<form>
+			<input type="text" placeholder="Escribe tu nombre"  id="nombre">
+			<input type="text" placeholder="Escribe tu apellido" id="apellido">
+			<input type="text" disabled id="fullname">
+
+			<input type="submit" id="btnSubmit3" value="mostrar nombre y apellido">
+		</form>
+
+		<br><hr><br>
+
+		<h2>Ejercicio 26</h2>
+		<input type="password" id="password">
+		<input type="password" id="password2">
+		<input type="button" value="verificar contraseñas" id="btnVerificarPass">
+
+		<br><hr><br>
+
+		<h2>Ejercicio 27</h2>
+		<h3>1.</h3>
+		<select id="pizzas">
+			<option value="pJQ">pizza de jamon y queso</option>
+			<option value="pMuzza">pizza de muzzarella</option>
+			<option value="pMorrones">pizza de morrones</option>
+		</select>
+		<input type="text" id="precio" disabled>
+
+		<h3>2.</h3>
+		<select id="monitores">
+			<option disabled>Monitores</option>
+			<option value="samsung22">Samsung 22"</option>
+			<option value="samsung24">Samsung 24"</option>
+			<option value="samsung27">Samsung 27"</option>
+		</select>
+		<select id="procesadores">
+			<option disabled>Procesadores</option>
+			<option value="i3">Intel i3</option>
+			<option value="i5">Intel i5</option>
+			<option value="i7">Intel i7</option>
+		</select>
+		<select id="almacenamiento">
+			<option disabled>Disco Duro</option>
+			<option value="500gb">500GB</option>
+			<option value="1tb">1TB</option>
+			<option value="3tb">3TB</option>
+		</select>
+		<input type="text" disabled id="presupuesto">
+		<input type="button" id="btnSubmit28-2" value="Calcular presupuesto">
+
+		<h3>3.</h3>
+		<select id="pizzas2">
+			<option value="pJQ">pizza de jamon y queso</option>
+			<option value="pMuzza">pizza de muzzarella</option>
+			<option value="pEspecial">pizza especial</option>
+		</select>
+		<input type="number" min="1" id="cantidad">
+		<input type="text" disabled id="precioTotal">
+		<input type="button" id="btnPrecioTotal" value="Calcular precio total">
+
+		<h3>4.</h3>
+		<p>Cuales son los numeros pares?</p>
+		<div id="opciones">
+			<p>2<input type="checkbox" value="2"></p>
+			<p>13<input type="checkbox" value="13"></p>
+			<p>17<input type="checkbox" value="17"></p>
+			<p>1994<input type="checkbox" value="1994"></p>
+			<p>27<input type="checkbox" value="27"></p>
+		</div>
+		<input type="button" id="btnSubmit27_4" value="Chequear respuestas">
+
+		<script src="js/24.js"></script>
+		<script src="js/25.js"></script>
+		<script src="js/26.js"></script>
+		<script src="js/27.js"></script>
+		<script src="js/28.js"></script>
+		<script src="js/29.js"></script>
+		<script src="js/30.js"></script>
+	</body>
+</html>
